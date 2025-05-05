@@ -1,0 +1,1 @@
+cmd_/home/ayesha/live_memory_forensic/tools/LiME/src/lime.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/ayesha/live_memory_forensic/tools/LiME/src/lime.o @/home/ayesha/live_memory_forensic/tools/LiME/src/lime.mod 

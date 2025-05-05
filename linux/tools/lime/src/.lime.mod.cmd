@@ -1,0 +1,1 @@
+cmd_/home/ayesha/live_memory_forensic/tools/LiME/src/lime.mod := printf '%s\n'   tcp.o disk.o main.o hash.o deflate.o | awk '!x[$$0]++ { print("/home/ayesha/live_memory_forensic/tools/LiME/src/"$$0) }' > /home/ayesha/live_memory_forensic/tools/LiME/src/lime.mod
