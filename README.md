@@ -1,7 +1,5 @@
 # Sloth Memory Forensic Toolkit
 
-![Sloth Banner](docs/banner.png)
-
 > **LiME + Volatility + YARA Integration**  
 > "Slow and thorough memory forensics"
 
