@@ -1,0 +1,8 @@
+{
+    "output_dir": "D:/memory_forensics/output",
+    "winpmem_path": "D:/memory_forensics/Tools",
+    "yara_rules_folder": "D:/memory_forensics/yara_rules",
+    "volatility_plugins": ["pslist", "pstree", "dlllist", "handles"],
+    "profile": "Win10x64_18362",
+    "dump_filename": "memory_dump.raw"
+}
