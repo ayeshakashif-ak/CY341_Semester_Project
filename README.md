@@ -1,11 +1,11 @@
-# 🦥 Sloth Memory Forensic Toolkit
+# Sloth Memory Forensic Toolkit
 
 ![Sloth Banner](docs/banner.png)
 
 > **LiME + Volatility + YARA Integration**  
 > "Slow and thorough memory forensics"
 
-## 📂 Project Structure
+## Project Structure
 /live_memory_forensic/
 │── /tools/
 │ ├── lime/ # LiME kernel module source
@@ -15,11 +15,11 @@
 │── sloth_report.html # HTML report template
 └── README.md
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/live_memory_forensic.git
+git clone https://github.com/ayeshakashif-ak/CY341_Semester_Project.git
 cd live_memory_forensic
 
 # Install dependencies
