@@ -1,0 +1,30 @@
+import subprocess
+import os
+import json
+
+# Load Configuration
+with open('config.json', 'r') as f:
+    config = json.load(f)
+
+def run_volatility_analysis(dump_path, output_folder):
+    print("[*] Running Volatility analysis...")
+    for plugin in config['volatility_plugins']:
+        output_file = os.path.join(output_folder, f"{plugin}.txt")
+        
+        # Make sure that 'volatility' is either in PATH or specify the full path
+        volatility_cmd = "volatility"  # Replace with full path if not in PATH
+
+        cmd = [
+            volatility_cmd, "-f", dump_path, "--profile", config['profile'], plugin
+        ]
+        
+        # Try running the subprocess and handle errors
+        try:
+            with open(output_file, "w") as f:
+                subprocess.run(cmd, stdout=f, check=True)  # `check=True` will raise an error if the command fails
+            print(f"[+] {plugin} results saved.")
+        except subprocess.CalledProcessError as e:
+            print(f"[-] Error running {plugin}: {e}")
+        except FileNotFoundError as e:
+            print(f"[-] Volatility command not found: {e}")
+
