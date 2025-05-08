@@ -2,7 +2,7 @@ rule keylogger_memory_pattern
 {
     meta:
         description = "Detects potential keylogger behavior in memory"
-        author = "Ayesha"
+        author = "Ayela"
         category = "Keylogger"
 
     strings:
