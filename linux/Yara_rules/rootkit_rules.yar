@@ -2,7 +2,7 @@ rule rootkit_behavior_generic
 {
     meta:
         description = "Detects potential rootkit behavior via suspicious API strings"
-        author = "Ayesha"
+        author = "Noor"
         threat_type = "Rootkit"
 
     strings:
